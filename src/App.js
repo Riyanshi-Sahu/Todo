@@ -176,9 +176,9 @@ console.log(source);
                                   {...provided.dragHandleProps}
                                 >
 
-                                  <button onClick={handleClick(index)}>{el.name}</button>
+                                  <button onClick={handleClick(el.id)}>{el.name}</button>
                                  
-                                  {clicked[index]?<p>{el.description}</p>:null}
+                                  {clicked[el.id]?<p>{el.description}</p>:null}
                                 
                                   
                                 
